@@ -1,38 +1,224 @@
-.App {
+body {
+  height: 100%;
+  margin: 0;;
+}
+
+
+div {
+  display: block;
+}
+
+/* #logo-header {
+  background-image: url("../logo.png");
+  min-height: 500px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.bgimg1 {
+  background-image: url("../img1.jpg");
+  min-height: 500px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg2 {
+  background-image: url("../img2.jpg");
+  min-height: 400px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg3 {
+  background-image: url("../img3.jpg");
+  min-height: 400px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 35px;
+  letter-spacing: 10px;
+}
+
+.text-section {
+  color: #777;
+  background-color: white;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+.text-section-2 {
+  color: white;
+  background-color: #565656;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+#gallery {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gall-imgs {
+  max-width: 20%;
+}
+
+.header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+
+
+
+
+
+#contact-wrapper {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#contact-content{
+  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-self: center;
+  padding-top: 5em;
+}
+
+#form-container{
+  width: 100vw;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-top: 2px solid #00216f;
+  border-bottom: 2px solid #00216f;
+  background-color: #fff;
+}
+
+#contact-form {
+  padding: 1em;
+}
+
+.form-labels {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #53687E;
+}
+
+.form-inputs {
+  border: 1px solid #00216f;
+  border-radius: 10px;
+  padding-left: 1em;
+  display: block;
+  height: 2.5em;
+  width: 60vw;
+  margin: 0.5em;
+  font-style: italic;
+  font-family: 'Raleway', sans-serif;
+}
+
+.form-inputs:focus {
+  outline: none;
+  background-color: #ecf9fa;
+  transition: 0.25s;
+}
+
+#contact-textarea {
+  border: 1px solid #00216f;
+  font-style: italic;
+  overflow-wrap: break-word;
+  resize: none;
+  border-radius: 10px;
+  padding-left: 1em;
+  display: block;
+  width: 60vw;
+  margin: 0.5em;
+    height: 10em;
+  padding: 1em;
+  font-family: 'Raleway', sans-serif;
+}
+
+#contact-textarea:focus {
+  outline: none;
+  background-color: #ecf9fa;
+  transition: 0.25s;
+}
+
+#contact-btn {
+  padding: 1em;
+  margin: 1em;
+  background-color: #ecf9fa;
+  border: 1px solid #00216f;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 10px;
+  width: 10em;
+}
+
+#contact-btn:hover {
+  background-color: #3d5a80;
   color: white;
+  transition: 0.25s;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-message {
+  font-family: 'Raleway', sans-serif;
+  margin: auto;
+  width: 25em;
+  color: white;
+  background-color: #3d5a80;
+  border-radius: 10px;
+  padding: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#modal-x {
+  font-size: 1.25em;
+  margin-right: 18em;
+}
+
+#modal-x:hover {
+  cursor: pointer;
+  color: #EE6C4D;
+  transition: 0.25s;
+}
+
+@media screen and (max-width: 664px) {
+  .contact-message {
+    font-size: 0.75em;
+    width: 15em;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 400px) {
+  .contact-message {
+    font-size: 0.6em;
+    width: 10em;
   }
 }
