@@ -19,7 +19,7 @@ div {
 } */
 
 .bgimg1 {
-  background-image: url("../img1.jpg");
+  background-image: url("./assets/img1.jpg");
   min-height: 500px;
   position: relative;
   background-attachment: fixed;
@@ -29,7 +29,7 @@ div {
 }
 
 .bgimg2 {
-  background-image: url("../img2.jpg");
+  background-image: url("./assets/img2.jpg");
   min-height: 400px;
   position: relative;
   background-attachment: fixed;
@@ -39,7 +39,7 @@ div {
 }
 
 .bgimg3 {
-  background-image: url("../img3.jpg");
+  background-image: url("./assets/img3.jpg");
   min-height: 400px;
   position: relative;
   background-attachment: fixed;
