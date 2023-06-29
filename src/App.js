@@ -4,6 +4,7 @@ import About from './components/About';
 import Reviews from './components/Reviews';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <span className='border'>WALLY FLOORS</span>
         </div>
       </div> */}
+      <Navigation/>
       <Home/>
       <About/>
       {/* <div className='text-section'>
