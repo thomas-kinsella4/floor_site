@@ -1,8 +1,9 @@
-
 import './App.css';
-import gallery1 from "./wallysite-job1.jpg";
-import gallery2 from "./wallysite-job2.jpg";
-import gallery3 from "./wallysite-job3.PNG";
+import Home from './components/Home';
+import About from './components/About';
+import Reviews from './components/Reviews';
+import Gallery from './components/Gallery';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -10,36 +11,41 @@ function App() {
       {/* <div id="logo-header">
         
       </div> */}
-      <div className='bgimg1'>
+      {/* <div className='bgimg1'>
         <div className='caption'>
           <span className='border'>WALLY FLOORS</span>
         </div>
-      </div>
-      <div className='text-section'>
+      </div> */}
+      <Home/>
+      <About/>
+      {/* <div className='text-section'>
         <h3 className='header'>ABOUT/SERVICES</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
+      </div> */}
       <div className='bgimg2'>
         <div className='caption'>
         </div>
       </div>
-      <div className='text-section'>
+      {/* <div className='text-section'>
         <h3 className='header'>REVIEWS/GALLERY</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div className='text-section'>
+      </div> */}
+      <Reviews/>
+      {/* <div className='text-section'>
   
         <div id="gallery">
           <img src={gallery1} className='gall-imgs'></img>
           <img src={gallery2} className='gall-imgs'></img>
           <img src={gallery3} className='gall-imgs'></img>
         </div>
-      </div>
+      </div> */}
+      <Gallery/>
       <div className='bgimg3'>
         <div className='caption'>
         </div>
       </div>
-      <div className='text-section-2'>
+      <Contact/>
+      {/* <div className='text-section-2'>
         <h3 className='header'>CONTACT</h3>
         <form id="contact-form">
                         <label className="form-labels">Name:</label>
@@ -57,7 +63,7 @@ function App() {
                         <label className="form-labels">Addition Info:</label>
                         <textarea id="contact-textarea" placeholder="Additional Info" rows="10" name="additional-info"></textarea>       
         </form>
-      </div>
+      </div> */}
     </>
   );
 }
