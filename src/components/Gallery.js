@@ -5,7 +5,7 @@ import gallery3 from "../assets/wallysite-job3.jpg";
 
 const Gallery = () => {
   return (
-    <div className='text-section'>
+    <div className='text-section' id='gallery-section'>
         <div id="gallery">
             <img src={gallery1} className='gall-imgs'></img>
             <img src={gallery2} className='gall-imgs'></img>
